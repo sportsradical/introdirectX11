@@ -122,6 +122,7 @@ bool Graphics::InitializedDirectX(HWND hwnd, int widht, int height)
 
 	// Create Viewports
 	D3D11_VIEWPORT viewport;
+	ZeroMemory(&viewport, sizeof(D3D11_VIEWPORT));
 
 	viewport.TopLeftX = 0 ;
 	viewport.TopLeftY = 0;
